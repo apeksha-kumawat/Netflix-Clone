@@ -1,0 +1,606 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+   
+}
+
+/* Navbar */
+
+#backgroundImg{
+    background: url("images/cover_image.jpg");
+    background-size: cover;
+    height: 780px;
+    border-bottom : 8px solid #222;
+}
+.background{
+    background: rgb(0,0,0,0.4);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8),transparent 60%, rgba(0,0,0,0.8));
+    height: 100%;
+}
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.navbar{
+    display: flex;
+    padding: 30px 150px;
+    margin-bottom: 100px;
+}
+.logo{
+    width: 10.4375rem;
+    height: 2.8125rem;
+    margin-right: auto;
+}
+#language{
+    margin-right: 1.375rem;
+    border-radius: 5px;
+    background: transparent;
+    padding: 0 10px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: large;
+    width: 120px;
+
+}
+option{
+    background-color: rgb(33, 32, 32);
+
+    
+}
+.signin{
+    background-color: #E50914;
+    font-size: 1rem;
+    padding: 0 20px;
+    height: 40px; 
+    position: relative;
+    font-weight: 400;  
+    min-width: 60px;
+   
+}
+
+/* Main section */
+
+.main{
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    /* width: ; */
+    margin: 0 auto;
+
+}
+.main h1{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.main p{
+    font-size: 1.625rem;
+    margin-bottom: 20px; /**/
+}
+.form{
+    display: flex;
+    justify-content: center; 
+}
+h3{
+    margin-bottom: 20px;
+}
+.form div{
+    width: 500px;
+    height: 70px;
+    position: relative; 
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 16, 16, 0.422);
+    border: 1px solid grey;
+    margin-right :10px;
+    font-size: 20px;
+    padding:10px;
+    border-radius: 5px;
+}
+/* input:focus{
+    outline: none;
+} */
+
+.form button{
+    background-color: #E50914;
+    width: 250px;
+    font-size : 1.875rem;
+    margin-left: 10px;
+}
+
+/* .form label{
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    color: grey;
+    font-size: small;
+    padding-top: 1px;
+} */
+.formlabel{
+    box-sizing: border-box;
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    font-size: 18px;
+    cursor: text;
+    color: #bbbaba;
+}
+input:focus{
+    outline: 1px solid white;
+}
+input:focus ~ .formlabel{
+    font-size: 11px;
+    top: 7px;
+   
+}
+
+
+.TV{
+    background-color: black;
+    border-bottom: 9px solid #222;
+    padding: 100px ;
+    /* min-height: auto; */
+}
+
+.container{
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+h2{
+    font-size: 3.625rem;
+    font-weight: 800;
+}
+.tvclip{
+    width:45%;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+.description{
+    width: 50%;
+}
+.description p{
+    font-size: 1.625rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.tvclip img{
+    width: 100%;
+    z-index:10;
+    max-width: 600px;
+    position:relative
+}
+#tvvideo{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 87%;
+    height: 55%;
+}
+
+
+
+.phonesection{
+    background-color: black;
+    padding: 100px;
+    border-bottom: 9px solid #222;
+    
+}
+.phonesection .container{
+    justify-content: space-between;
+    max-width: 1200px;
+}
+.mobile{
+    position: relative;
+}
+.mobile img{
+    max-width: 550px;
+    
+}
+
+.stranger{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    border: 2px solid hsla(0,0%,100%,.25);
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.stranger img{
+    width: 60px;
+    margin-right: 10px;
+}
+.stranger span{
+    color: #0071eb;
+    margin-right: 50px;
+}
+
+
+.devices{
+    background-color: black;
+    padding: 100px;
+    border-bottom: 9px solid #222;
+}
+
+#devicesclip{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    max-width: 63%;
+    max-height: 47%;
+    top: 34%;
+    transform: translate(-50%,-50%);
+
+}
+
+.kids{
+    background-color: black;
+    padding: 100px;
+    border-bottom: 9px solid #222;
+}
+
+.kids img{
+    max-width: 45%;
+}
+.kids .description{
+    width: 55%;
+}
+
+
+
+.qst{
+    background-color: black;
+    border-bottom: 9px solid #222;
+    padding: 50px;
+}
+.sm-container{
+    margin: 0 auto;
+    max-width: 1215px;
+    text-align: center;
+}
+
+.sm-container ul{
+    list-style: none;
+    margin: 50px;
+   
+}
+li button{
+    background-color: #303030 ;
+    width: 90%;
+    padding: 20px;
+    border-radius: 0;
+    text-align: start;
+    font-size: 1.625rem ;
+    margin-bottom: 1px;
+    margin-top: 7px;
+    
+}
+li button i{
+    float: right;
+    width: 30px;
+}
+li div{
+    width:90% ;
+    text-align: left;
+    background-color: #303030;
+    margin: auto;
+    font-size: 1.625rem ;
+    padding: 20px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+li div p:first-child{
+    margin-bottom: 30px;
+}
+
+.sm-container h1{
+    font-size: 3.125rem;
+    margin-bottom: 50px;
+}
+
+
+
+footer{
+    background-color: black;
+    padding : 50px 0;
+}
+
+.footercontent{
+    width:70%;
+    margin: auto;
+}
+.content{
+    width: 100%;
+    margin: auto;
+    min-height: 300px;
+}
+
+.content p{
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 50px;
+   font-size: 1.175rem;
+}
+footer a{
+    color : rgba(255,255,255,0.7);
+    /* text-decoration: none; */
+    font-size:1.0875rem;
+    
+}
+footer ul{
+    list-style: none;
+}
+.content li{
+    float: left;
+    width: 33%;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.footercontent p{
+    color: rgba(255,255,255,0.7);
+    margin-top: 30px;
+    font-size:1.1rem;
+}
+footer select {
+    color: rgb(231, 227, 227);
+    width: 140px;
+    font-size: 20px;
+   
+}
+
+footer select option{
+    background-color: black;
+}
+.question div{
+    display: none;
+}
+
+
+
+/* Hover */
+
+width.form button:hover{
+    background-color: #B20710;
+    transition-delay: 10ms;
+}
+
+
+
+/* media queries */
+
+@media (max-width: 1450px){
+   
+    .form div{
+        width: 450px;
+        height: 60px;
+    }
+    .form button{
+        width: 212px;
+        font-size: 1.625rem;
+    }
+    .navbar{
+        padding: 30px 50px;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 950px){
+    .logo{
+        width: 108px;
+        height: 35px;
+    }
+
+    .main h1{
+        font-size: 2.8rem;
+    }
+
+    .form h3{
+        font-size: 1.675rem;
+        max-width: 50px;
+        margin: auto;
+    }
+    .container{
+        display: block;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .tvclip, .description{
+        width: 100%;
+    }
+    .kids .description{
+        width: 100%;
+    }h2{
+        font-size: 2.5rem;
+    }
+    .description p{
+        font-size: 1.25rem;
+    }
+    .phonesection .container, .kids .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .kids img{
+        max-width: 80%;
+        margin-bottom: 30px;
+    }
+    .question div,.question :no-button{
+        font-size: 1.25rem;
+    }
+    .question button{
+        padding: 15px;
+    }
+    .question button i{
+        width : 20px;
+    }
+    .sm-container form{
+        max-width: 400px;
+        margin: auto;
+    }
+    .content li{
+        width: 33.33%;
+
+    }
+   
+
+}
+
+
+
+
+@media (max-width: 550px){
+    .main{
+        padding-bottom: 0;
+    }
+    .main h1{
+        font-size: 1.75rem;
+    }
+    .main br{
+        display: none;
+    }
+    .main p,h3{
+        font-size: 1.125rem;
+    
+    }
+
+
+
+    .form{
+        display: block;
+    }
+
+    .form div{
+       height:50px;
+       width: 70%; 
+       margin: auto;
+    }
+    .form button{
+        font-size: 1rem;
+        height: 40px;
+        width: 130px;
+        margin-top: 15px;
+    }
+
+    .navbar{
+        margin:0;
+        padding: 20px 15px;
+    }
+    #backgroundImg{
+        height: 485px;
+    }
+    .logo{
+        width: 88px;
+    }
+    .navbar #language{
+        width: 90px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+    .signin{
+        width: 60px;
+        height: 28px;
+        padding: 2px;
+    }
+    h2{
+        font-size:1.625rem ;
+    }
+    .description p{
+        font-size: 1.125rem ;
+    }
+    .TV, .phonesection, .devices , .kids{
+        padding: 50px 0;
+    }
+    #mobiledevice{
+        max-width: 300px;
+    }
+    .stranger img{
+        width: 40px;
+        margin-right: 10px;
+    }
+    .stranger span{
+        color: #0071eb;
+        margin-right: 50px;
+    }
+
+    .qst{
+        padding:40px 0;
+    }
+    .question div, .question button{
+        width: 100%;
+    }
+    .sm-container form{
+        padding: 0 20px;
+    }
+    .sm-container h1{
+        font-size: 2.1rem;
+        margin-bottom: 10px;
+    }
+    .sm-container ul{
+        margin-bottom: 20px;
+    }
+    
+    .question button{
+        font-size: 1.1rem;
+    }
+    .question button i{
+        font-size: 13px;
+        
+    }
+}
+@media only screen and (max-width:768px){
+    html,body{
+        width: 100%;
+        overflow-x:hidden;
+    }
+    .content li{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    #backgroundImg{
+        height: 100%;
+    }
+
+    .main{
+        padding-bottom:30px;
+    }
+    .content li{
+        width: 80%;
+    } 
+    .qst h3{
+        margin-top : 40px;
+     }
+    
+} 
+
+
+ @media (max-width: 380px){
+    .question button{
+        font-size: 0.8rem;
+    }
+    .question button i{
+        width: 11px;
+     }
+   
+
+}
