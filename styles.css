@@ -542,6 +542,9 @@ width.form button:hover{
     .question button{
         font-size: 1.1rem;
     }
+    .question p{
+        font-size: 1.1rem;
+    }
     .question button i{
         font-size: 13px;
         
@@ -578,11 +581,12 @@ width.form button:hover{
 
  @media (max-width: 380px){
     .question button{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .question button i{
         width: 11px;
      }
-   
-
+     .question p{
+        font-size: 0.9rem;
+    }
 }
